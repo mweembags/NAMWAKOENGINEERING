@@ -1,0 +1,69 @@
+/* ===== HOBBY-SPECIFIC ADDITIONS (Safe Merge) ===== */
+/* Add this AFTER your existing CSS */
+
+/* 1. Hero Text Enhancements */
+.hobbies-hero .hero-content h1 {
+    color: #fff !important; /* Brighter white */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6) !important;
+}
+
+.hobbies-hero .hero-content p {
+    color: #f0f0f0 !important;
+    font-weight: 300;
+}
+
+/* 2. Card Styling Overrides */
+.hobby-card {
+    background: rgba(255,255,255,0.1) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.hobby-card h3 {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.hobby-card p {
+    color: #e0e0e0 !important;
+    font-weight: 300;
+}
+
+.hobby-card:hover {
+    background: rgba(255,255,255,0.15) !important;
+    transform: translateY(-5px) scale(1.02) !important;
+}
+
+/* 3. Gallery Item Text */
+.gallery-item p {
+    color: #fff !important;
+    background: rgba(0,0,0,0.7) !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px !important;
+}
+
+/* 4. Progress Section */
+.progress-section {
+    background: rgba(255,255,255,0.1) !important;
+    backdrop-filter: blur(5px);
+}
+
+.progress-section h2 {
+    color: #fff !important;
+}
+
+.progress-item h3 {
+    color: #f0f0f0 !important;
+}
+
+/* 5. Light Mode Fallback */
+@media (prefers-color-scheme: light) {
+    .hobby-card {
+        background: rgba(0,0,0,0.05) !important;
+        border-color: #eee !important;
+    }
+    .hobby-card h3 { color: #333 !important; }
+    .hobby-card p { color: #555 !important; }
+}

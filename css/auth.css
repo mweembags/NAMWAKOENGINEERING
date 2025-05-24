@@ -1,0 +1,136 @@
+/* ===== AUTH PAGES STYLES ===== */
+/* Applies to both login.html and register.html */
+
+/* Base Styles */
+.auth-page {
+    font-family: 'Arial', sans-serif;
+    background: #d30f0f;
+    margin: 2rem;
+    min-height: calc(100vh-200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+/* Creates space between header and form */
+.auth-form {
+    padding: 5rem 2rem; /* 5rem top/bottom, 2rem sides */
+    min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+}
+
+/* Optional: Add margin to form container */
+.form-container {
+    margin: 2rem auto;
+}
+/* Container Styles */
+.auth-container {
+    background: rgb(66, 176, 209);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(134, 218, 99, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 80px;
+}
+
+
+/* Header Styles */
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.auth-header h2 {
+    color: #333;
+    margin: 0;
+}
+
+/* Form Styles */
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    bobdy{
+        background-color: #45a049;
+    }
+}
+
+/* Button Styles */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Footer Links */
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.auth-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 20px;
+    }
+    
+    .auth-header img {
+        width: 60px;
+    }
+}

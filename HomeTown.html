@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hometown | NAMWAKO ENGINEERING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hometown.css"> <!-- Additional styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (Consistent with Homepage) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.PNG" alt="NAMWAKO TECH Logo" class="logo-img">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="hometown.html" class="active"><i class="fas fa-landmark"></i> Hometown</a></li>
+                <li><a href="travel.html"><i class="fas fa-plane"></i> Travel</a></li>
+                <li><a href="hobbies.html"><i class="fas fa-paint-brush"></i> Hobbies</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hometown Hero Banner -->
+    <section class="hometown-hero">
+        <div class="hero-overlay">
+            <h1>Discover My Hometown</h1>
+            <p>A journey through culture, traditions, and flavors</p>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section class="culture-section">
+        <h2><i class="fas fa-monument"></i> Culture & Traditions</h2>
+        <div class="culture-grid">
+            <div class="culture-card">
+                <img src="images/Kuomboka_PBentley-20.jpg" alt="Traditional Festival">
+                <h3>Annual Festivals</h3>
+                <p>Experience our vibrant kuomboka ceremon with dances, music, and traditional attire.</p>
+            </div>
+            <div class="culture-card">
+                <img src="images/R.jpeg" alt="Famous Landmark">
+                <h3>Historic Landmarks</h3>
+                <p>Visit victoria falls, a symbol of our heritage dating back to 3 million years ago.</p>
+            </div>
+            <div class="culture-card">
+                <img src="images/kabwata-arts.jpg" alt="Local Craft">
+                <h3>Local Crafts</h3>
+                <p>Handmade curios crafted by skilled artisans using centuries-old techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Gallery -->
+    <section class="food-section">
+        <h2><i class="fas fa-utensils"></i> Local Cuisine</h2>
+        <div class="food-gallery">
+            <div class="food-item" onclick="openModal('images/food1.jpg', 'Nshima na fisashi')">
+                <img src="images/IMG_5497_1.jpg" alt="Local Dish 1">
+                <p>Nshima na fisashi</p>
+            </div>
+            <div class="food-item" onclick="openModal('images/food2.jpg', 'Nshima na sabi')">
+                <img src="images/sabi.jpeg" alt="Local Dish 2">
+                <p>Nshima na sabi</p>
+            </div>
+            <div class="food-item" onclick="openModal('images/food3.jpg', 'Nshima na chikanda')">
+                <img src="images/hq720.jpg" alt="Local Dish 3">
+                <p>Nshima na chikanda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Image Zoom -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer (Consistent with Homepage) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.PNG" alt="NAMWAKO TECH Logo">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            <p>&copy; 2025 NAMWAKO ENGINEERING All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/hometown.js"></script> <!-- Additional scripts -->
+</body>
+</html>

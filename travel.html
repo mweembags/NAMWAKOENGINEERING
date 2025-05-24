@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Adventures |NAMWAKO ENGINEERING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Leaflet CSS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <div class="logo">
+        <img src="images/logo.PNG" alt="NAMWAKO ENGINEERING Logo" class="logo-img">
+        <span> ENGINEERING</span>
+    </div>
+</head>
+<body>
+    <!-- Navigation (Same as homepage) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="NAMWAKO TECH Logo" class="logo-img">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="hometown.html"><i class="fas fa-landmark"></i> Hometown</a></li>
+                <li><a href="travel.html" class="active"><i class="fas fa-plane"></i> Travel</a></li>
+                <li><a href="hobbies.html"><i class="fas fa-paint-brush"></i> Hobbies</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Travel Hero -->
+    <section class="travel-hero">
+        <div class="hero-text">
+            <h1>Travel Journal</h1>
+            <p>Exploring the world one destination at a time</p>
+            <section class="timeline">
+                <h2>My Travel Journey</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h3>Victoria Falls</h3>
+                            <p>Experienced the mighty Zambezi River and bungee jumping!</p>
+                        </div>
+                    </div>
+                    <!-- Add more timeline items -->
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="map-section">
+        <h2><i class="fas fa-map-marked-alt"></i> Places I've Visited</h2>
+        <div id="travelMap"></div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <h2><i class="fas fa-images"></i> Travel Memories</h2>
+        <div class="gallery-container">
+            <!-- Gallery items will be added dynamically by JS -->
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer (Same as homepage) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="NAMWAKO TECH Logo">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            <p>&copy; 2025 NAMWAKO ENGINEERING. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+<script src="js/travel.js"></script>
+</body>
+</html>

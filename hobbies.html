@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies | NAMWAKO ENGINEERING</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Hobbies Page Specific Styles */
+        .hobbies-hero {
+            background: linear-gradient(rgba(91, 214, 161, 0.1), rgba(71, 78, 75, 0.1)), 
+                        url('../images/.jpg');
+            height: 60vh;
+        }
+        
+        .hobby-card {
+            background: rgba(75, 175, 184, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(48, 4, 4, 0.1);
+            transition: all 0.3s ease;
+            border-bottom: 4px solid #5fb87a;
+        }
+        
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(214, 216, 223, 0.2);
+        }
+        
+        .hobby-icon {
+            font-size: 2.5rem;
+            color: #141d17;
+            margin-bottom: 1rem;
+            text-decoration-color: #3498db;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        body {
+        background-image: url(images/samfya.webp);position: inherit;
+}
+        .hobbies-hero .hero-content h1 {
+    color: #ecf0f1;
+}
+.hobbies-hero .hero-content p {
+    color: #e9eee9;
+    font-style:italic;
+}
+/* Hobbies Header */
+.hobbies-title {
+  color: #e9f0eb; /* Zambia green */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.hobbies-title i {
+  margin-right: 10px;
+}
+
+/* Subtitle */
+.hobbies-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #6ae68f; /* Dark gray */
+  font-size: .1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation (Same as other pages) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.PNG" alt="NAMWAKO TECH Logo" class="logo-img">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="hometown.html"><i class="fas fa-landmark"></i> Hometown</a></li>
+                <li><a href="travel.html"><i class="fas fa-plane"></i> Travel</a></li>
+                <li><a href="hobbies.html" class="active"><i class="fas fa-paint-brush"></i> Hobbies</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hobbies-hero hero">
+        <div class="hero-content">
+            <h1>My Creative Pursuits</h1>
+            <p>Discover the activities that fuel my passion and creativity</p>
+        </div>
+    </section>
+
+    <!-- Main Hobbies Section -->
+    <section class="hobbies-section" style="padding: 4rem 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2><i class="fas fa-heart"></i>My Favorite Hobbies</h2>
+        <p style="text-align: center; margin-bottom: 3rem;">These activities help me relax, learn, and express myself</p>
+        
+        <div class="hobbies-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- Hobby 1 -->
+            <div class="hobby-card" style="padding: 2rem; text-align: center;">
+                <div class="hobby-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h3>Photography</h3>
+                <p>Capturing moments and landscapes, especially during my travels. I enjoy both digital and film photography.</p>
+                <div class="photo-gallery" style="margin-top: 1rem;">
+                    <div class="gallery-item">
+                        <img src="images/hanzhou.jpg.jpg" alt="Photography sample">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hobbies-bg.jpg" alt="Photography sample">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 2 -->
+            <div class="hobby-card" style="padding: 2rem; text-align: center;">
+                <div class="hobby-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Cooking Zambian Cuisine</h3>
+                <p>Preparing traditional dishes like Nshima with Ifisashi, Kapenta, and delicious Zambian stews.</p>
+                <div class="photo-gallery" style="margin-top: 1rem;">
+                    <div class="gallery-item">
+                        <img src="images/IMG_5497_1.jpg" alt="Zambian cuisine">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/fudi3.jpg" alt="Zambian cuisine">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hobby 3 -->
+            <div class="hobby-card" style="padding: 2rem; text-align: center;">
+                <div class="hobby-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>DIY Electronics</h3>
+                <p>Building small engineering projects and programming microcontrollers for home automation.</p>
+                <div class="photo-gallery" style="margin-top: 1rem;">
+                    <div class="gallery-item">
+                        <img src="images/pro.jpeg" alt="Electronics project">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/laprep.jpeg" alt="Electronics project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobby Progress Section -->
+    <section class="progress-section" style="background: #aaccc5; padding: 4rem 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center;"><i class="fas fa-chart-line"></i> My Hobby Progress</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h3>Photography Skills</h3>
+                    <div class="progress-bar" style="height: 20px; background: #e0e0e0; border-radius: 10px; margin-top: 10px;">
+                        <div style="height: 100%; width: 75%; background: #5fb87a; border-radius: 10px;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px;">75%</p>
+                </div>
+                <div>
+                    <h3>Recipes Mastered</h3>
+                    <div class="progress-bar" style="height: 20px; background: #e0e0e0; border-radius: 10px; margin-top: 10px;">
+                        <div style="height: 100%; width: 60%; background: #e31b23; border-radius: 10px;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px;">60%</p>
+                </div>
+                <div>
+                    <h3>Projects Completed</h3>
+                    <div class="progress-bar" style="height: 20px; background: #e0e0e0; border-radius: 10px; margin-top: 10px;">
+                        <div style="height: 100%; width: 45%; background: #3498db; border-radius: 10px;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px;">45%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.PNG" alt="NAMWAKO TECH Logo">
+                <span>NAMWAKO ENGINEERING</span>
+            </div>
+            
+            <p>&copy; 2025 NAMWAKO ENGINEERING All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for progress bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar div');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 300);
+            });
+            
+            // Gallery lightbox effect
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const lightbox = document.createElement('div');
+                    lightbox.style.position = 'fixed';
+                    lightbox.style.top = '0';
+                    lightbox.style.left = '0';
+                    lightbox.style.width = '100%';
+                    lightbox.style.height = '100%';
+                    lightbox.style.backgroundColor = 'rgba(0,0,0,0.9)';
+                    lightbox.style.display = 'flex';
+                    lightbox.style.justifyContent = 'center';
+                    lightbox.style.alignItems = 'center';
+                    lightbox.style.zIndex = '1000';
+                    
+                    const img = document.createElement('img');
+                    img.src = imgSrc;
+                    img.style.maxHeight = '90vh';
+                    img.style.maxWidth = '90vw';
+                    img.style.objectFit = 'contain';
+                    
+                    lightbox.appendChild(img);
+                    lightbox.addEventListener('click', () => {
+                        document.body.removeChild(lightbox);
+                    });
+                    
+                    document.body.appendChild(lightbox);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
